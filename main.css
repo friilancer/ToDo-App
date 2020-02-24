@@ -113,7 +113,16 @@ footer{
         width: 60vw;
     }
 }
-
+@media screen and (min-width:600px){
+    #popUp p{
+        font-size: 35px;
+    }
+}
+@media screen and (max-width:400px){
+    .task{
+        grid-template-columns: 1fr 80% 1fr;
+    }  
+}
 #popUp{
     font-family: 'Pacifico';
     z-index: 1;
@@ -129,6 +138,6 @@ footer{
     text-align: center;
     position: relative;
     top: 30vh;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
 }

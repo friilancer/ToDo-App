@@ -93,6 +93,24 @@ footer{
     justify-items: center;
     margin-top: 30vh;
 }
+#popUp{
+    font-family: 'Pacifico';
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    color: #62dafc;
+}
+#popUp p{
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+    top: 30vh;
+    font-size: 25px;
+}
 @media screen and (max-width:900px){
     input{
         width: 40vw;
@@ -116,28 +134,16 @@ footer{
 @media screen and (min-width:600px){
     #popUp p{
         font-size: 35px;
+        top: 30vh;
     }
 }
 @media screen and (max-width:400px){
     .task{
-        grid-template-columns: 1fr 80% 1fr;
+        grid-template-columns: 1fr 70% 1fr;
     }  
+    #popUp p{
+        font-size: 15px;
+        top: 10vh;
+    }
 }
-#popUp{
-    font-family: 'Pacifico';
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background: white;
-    color: #62dafc;
-}
-#popUp p{
-    text-align: center;
-    position: relative;
-    top: 30vh;
-    font-size: 30px;
-    font-weight: bold;
-}
+

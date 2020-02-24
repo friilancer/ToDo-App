@@ -142,8 +142,8 @@ footer{
         grid-template-columns: 1fr 70% 1fr;
     }  
     #popUp p{
-        font-size: 15px;
-        top: 10vh;
+        font-size: 10px;
+        top: 5vh;
     }
 }
 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ToDo App</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    </head>
+    <body>
+
+        <header>
+          <nav>
+              <div class="pane">
+                  <div id="date"></div>
+                  <div id="taskCount"></div>
+              </div>
+              <div id="elInc" class="el">Incomplete Tasks</div>
+              <div id="elCom" class="el">Completed Tasks</div>              
+          </nav>
+        </header>
+        <main>
+            <div id="popUp">
+                <p>ToDo App <br> designed by <a href="https://dribbble.com/iantrent" target="blank">Ian Trent</a></p>
+            </div>
+            <div>
+                <input id="inputTask" type="text" placeholder="Enter a task..." />
+                <button id="createTask">Add Task</button>
+            </div>
+            <div id="createdTasks"></div>
+        </main>
+        <footer>
+            <!--<p>Design by <a href="https://dribbble.com/iantrent">Ian Trent</a></p>-->
+        </footer>
+
+        <script src="main.js"></script>
+    </body>
+</html>

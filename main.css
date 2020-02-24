@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body{
+    margin: 0;
+    padding: 0;
+    color: rgb(230, 230, 230);
+    font-family: 'Oswald', Verdana, sans-serif;
+    background: #383f49;
+}
+nav{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 50% 1fr 1fr;
+    margin-bottom: 15px;
+       
+}
+.el{
+    display: grid;
+    justify-self: end;
+    font-weight: bold;
+}
+header, main, footer {
+    margin: 30px 10vw 0;
+}
+input{
+    width: 35vw;
+    padding: 8px;
+    border: 1px solid #383f49;
+    border-radius: 3px;
+}
+input:focus, button:focus{
+    outline: none;
+}
+button#createTask{
+    padding: 7px 7px;
+    border-radius: 3px;
+    background: #62dafc;
+    border: 1px solid #62dafc;
+    color: white;
+}
+#createdTasks{
+    margin-top: 10px;
+}
+.task{
+    display: grid;
+    grid-template-columns: 1fr 95% 1fr;
+    grid-template-rows: 1fr;
+    border-bottom: 2px solid #5b626c;
+    color: rgb(229, 229, 229);
+    padding: 10px 0;
+    font-size: 20px;
+}
+.del{
+    cursor: pointer;
+    display: grid;
+    justify-self: end;
+    align-self: end;
+    color: #5b626c;   
+}
+.check{
+    cursor: pointer;
+    display: grid;
+    color: #5b626c;
+    align-self: end;
+}
+.del:hover, .check:hover{
+    color: white;
+}
+.inactive{
+    color: #5b626c;
+}
+#elCom:hover, #elInc:hover{
+    cursor: pointer;
+    color: #62dafc;
+}
+#taskCount{
+    color: #62dafc;
+    font-weight: lighter;
+}
+.hide{
+    visibility: hidden;
+}
+a{
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+a:hover{
+    color: #62dafc;
+}
+footer{
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    margin-top: 30vh;
+}
+@media screen and (max-width:900px){
+    input{
+        width: 40vw;
+    }
+    .task{
+        grid-template-columns: 1fr 90% 1fr;
+    }
+
+}
+@media screen and (max-width:600px){
+    header, main, footer {
+        margin: 30px 2vw 0;
+    }
+    nav{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    input{
+        width: 60vw;
+    }
+}
+
+#popUp{
+    font-family: 'Pacifico';
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: white;
+    color: #62dafc;
+}
+#popUp p{
+    text-align: center;
+    position: relative;
+    top: 30vh;
+    font-size: 40px;
+    font-weight: bold;
+}

@@ -55,13 +55,17 @@ button#createTask{
     display: grid;
     justify-self: end;
     align-self: end;
-    color: #5b626c;   
+    color: #5b626c;  
+    position: relative;
+    bottom: 3px; 
 }
 .check{
     cursor: pointer;
     display: grid;
     color: #5b626c;
     align-self: end;
+    position: relative;
+    bottom: 3px;
 }
 .del:hover, .check:hover{
     color: white;
@@ -86,12 +90,6 @@ a{
 }
 a:hover{
     color: #62dafc;
-}
-footer{
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    margin-top: 30vh;
 }
 #popUp{
     font-family: 'Pacifico';
